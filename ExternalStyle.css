@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: rgb(244,244,246);
+
+    /*给header定位后，header就不归body管了（脱离文档流）*/
+    /*这个时候让body里所有东西对上内边距空出一个header的高度*/
+    padding-top: 44px;
+    padding-bottom: 49px;
+}
+
+header{
+    background: rgb(40,133,202);
+    line-height: 44px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+    width: 100%;
+
+    z-index: 9999;
+
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.DS_second_section img{
+    width: 100%;
+}
+
+footer{
+    height: 49px;
+    display: table;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    position: fixed;
+    background: black;
+}
+footer a{
+    text-decoration: none;
+    display: table-cell;
+    width:20%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer span{
+    display: block;
+    font-size: 10px;
+    color: white;
+}
+
+.EP_choice_section{
+    display: table;
+    width: 100%;
+    left: 0;
+    top: 44px;
+    position: fixed;
+    font-size: 18px;
+    background: #f4f4f6;
+    height: 44px;
+    line-height: 44px;
+}
+.EP_choice_section a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: table-cell;
+    width: 33.3%;
+}
+
+.EP_up_div{
+    background: white;
+    text-align: center;
+}
+
+.EP_all_img{
+    width: 100%;
+}
+
+.EP_first_h{
+    font-size: 14px;
+}
+.EP_first_p{
+    font-size: 10px;
+    color: gray;
+}
+
+.EP_middle_div{
+    text-align: center;
+    background: #f4f4f6;
+}
+.EP_paragraph_div{
+    text-align: left;
+    font-size: 10px;
+    color: gray;
+}

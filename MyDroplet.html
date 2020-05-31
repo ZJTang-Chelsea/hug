@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>唐智杰</title>
+    <link rel="short icon" href="Resource/icon.png">
+
+    <link rel="stylesheet" href="ExternalStyle.css">
+
+    <style>
+        .MD_external_div{
+            position: relative;
+        }
+        .MD_external_div .MD_bg_img{
+            width: 100%;
+        }
+        .MD_inner_div{
+            width: 66px;
+            height: 120px;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+
+            margin-left: -33px;
+            margin-top: -60px;
+
+            position: absolute;
+
+        }
+
+        .MD_external_div .MD_inner_div button{
+            background: #2083CC;
+            width: 66px;
+            height:20px;
+            margin-top: 5px;
+        }
+
+        .MD_external_div .MD_inner_div span{
+            display: block;
+            margin: 5px;
+        }
+
+        .MD_bottom_div{
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid #cccccc;
+            /*text-align: center;*/
+            background: white;
+            width: 90%;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .MD_left_img{
+            float: left;
+            margin: 15px 20px 0 10px; //上右下左
+        }
+        .MD_right_img{
+            float: right;
+            margin: 15px 10px 0 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<!--语义化标签，增强代码可读性-->
+<!--第一部分-->
+<header>
+    <span>小滴服务</span>
+</header>
+
+<!--第二部分-->
+<div class="MD_external_div">
+    <img class="MD_bg_img" src="Resource/banner5.png" alt="">
+    <div class="MD_inner_div">
+        <img class="MD_head_img" src="Resource/head.png" alt="">
+        <span>斜阳</span>
+        <button onclick="logout()">log out</button>
+
+        <script>
+            function logout() {
+                location.href="index.html";
+            }
+        </script>
+    </div>
+</div>
+<div class="MD_bottom_div">
+    <img class="MD_left_img" src="Resource/gr_1.png" alt="">
+    <sapn>My Client</sapn>
+    <img class="MD_right_img" src="Resource/jt.png" alt="">
+</div>
+<div class="MD_bottom_div">
+    <img class="MD_left_img" src="Resource/gr_2.png" alt="">
+    <sapn>My Balance</sapn>
+    <img class="MD_right_img" src="Resource/jt.png" alt="">
+</div>
+<div class="MD_bottom_div">
+    <img class="MD_left_img" src="Resource/gr_3.png" alt="">
+    <sapn>Register Client</sapn>
+    <img class="MD_right_img" src="Resource/jt.png" alt="">
+</div>
+<div class="MD_bottom_div">
+    <img class="MD_left_img" src="Resource/gr_4.png" alt="">
+    <sapn>Change Password</sapn>
+    <img class="MD_right_img" src="Resource/jt.png" alt="">
+</div>
+
+
+<!--第四部分-->
+<footer>
+    <a href="DropletService.html">
+        <img src="Resource/nav10.png">
+        <span>小滴服务</span>
+    </a>
+    <a href="EnterpriseProjects.html">
+        <img src="Resource/nav20.png">
+        <span>企业项目</span>
+    </a>
+    <a href="ServiceProcess.html">
+        <img src="Resource/nav30.png">
+        <span>服务流程</span>
+    </a>
+    <a href="PlatForm.html">
+        <img src="Resource/nav40.png">
+        <span>平台风采</span>
+    </a>
+    <a href="">
+        <img src="Resource/nav51.png">
+        <span style="color: red">我的小滴</span>
+    </a>
+</footer>
+
+</body>
+</html>

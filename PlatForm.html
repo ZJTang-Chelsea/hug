@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>唐智杰</title>
+    <link rel="short icon" href="Resource/icon.png">
+
+    <script type="text/javascript" src="Ajax.js"></script>
+
+    <!---->
+    <link rel="stylesheet" href="ExternalStyle.css">
+
+
+    <style>
+        article{
+            margin: 20px;
+        }
+
+        h3{
+            color: red;
+            font-size:18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        h4{
+            font-size: 14px;
+        }
+
+        article p{
+            font-size: 12px;
+            line-height: 2em;
+            text-indent: 2em;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!--语义化标签，增强代码可读性-->
+<!--第一部分-->
+<header>
+    <span>平台风采</span>
+</header>
+
+<!--第二部分-->
+<section class="DS_second_section">
+    <img src="Resource/banner4.png" alt="小子，看看自己连上网没" >
+</section>
+
+<!--第三部分-->
+<article>
+    <div>
+        <!--<button onclick="fuck()">还是简介</button>-->
+        <h3 id="h3_title"></h3>
+        <h4 id="h4_subtitle"></h4>
+        <div id = "p_div">
+        </div>
+    </div>
+
+
+</article>
+
+
+
+<!--第四部分-->
+<footer>
+    <a href="DropletService.html">
+        <img src="Resource/nav10.png">
+        <span>小滴服务</span>
+    </a>
+    <a href="EnterpriseProjects.html">
+        <img src="Resource/nav20.png">
+        <span>企业项目</span>
+    </a>
+    <a href="ServiceProcess.html">
+        <img src="Resource/nav30.png">
+        <span>服务流程</span>
+    </a>
+    <a href="">
+        <img src="Resource/nav41.png">
+        <span style="color: red">平台风采</span>
+    </a>
+    <a href="MyDroplet.html">
+        <img src="Resource/nav50.png">
+        <span>我的小滴</span>
+    </a>
+</footer>
+
+
+<script>
+
+        // //第一步创建对象
+        //     var xmlhttp;
+        //     xmlhttp=new XMLHttpRequest();
+        //
+        // //第二部，建立与服务器链接
+        // xmlhttp.open('get','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus');
+        //
+        // //给个头
+        // xmlhttp.setRequestHeader('content-type','application/x-www-form-urlencoded')
+        //
+        // //第三步，发送
+        //     xmlhttp.send();
+        //
+        // //第四步，接受
+        //     xmlhttp.onreadystatechange= function () {
+        //
+        //     if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+        //         var obj =JSON.parse(xmlhttp.responseText).data;
+        //         document.getElementById("h3_title").innerHTML = obj.title;
+        //         document.getElementById("h4_subtitle").innerHTML = obj.subTitle;
+        //         document.getElementById("p_div").innerHTML = obj.info;
+        //     }
+        // }
+
+        //function fuck () {
+            var get = "get";
+            var url = "https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus";
+
+            ajax(get, url, null, function (result) {
+                document.getElementById("h3_title").innerHTML = result.title;
+                document.getElementById("h4_subtitle").innerHTML = result.subTitle;
+                document.getElementById("p_div").innerHTML = result.info;
+            });
+
+       // }
+
+        // function output(result){
+
+        // }
+</script>
+
+</body>
+</html>
